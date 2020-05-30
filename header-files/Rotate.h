@@ -7,7 +7,7 @@
 class Rotate : public File
 {
 public:
-   // завърта картинка на 90 градуса наляво или надясно
+   // завърта всички картинки на 90 градуса в текущата сесия наляво или надясно
     void execute(Files& images, const char* direction);
 };
 #endif
