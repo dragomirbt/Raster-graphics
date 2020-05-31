@@ -8,6 +8,7 @@ class Grayscale : public File
 {
 public:
        // прави всички картинки в текущата сесия с нюанси на сивото
+       // @param images масив от картинки
 	void execute(Files& images);
 };
 #endif
