@@ -8,6 +8,10 @@ class Collage : public File
 {
 public:
 	// създава хоризонтален или вертикален колаж от две картинки и го доабавя в масива от картинки
-	void execute(const char* direction, const char* image1, const char* image2, Files& image);
+	// @param direction ориентацията на картинката (може да е хоризонтална или вертикална)
+	// @param image1_name името на първата картинка
+	// @param image2_name името на втората картинка
+	// @param images масивът, от който са картинките
+	void execute(const char* direction, const char* image1_name, const char* image2_name, Files& images);
 };
 #endif
