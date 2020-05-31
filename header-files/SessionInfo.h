@@ -9,6 +9,9 @@ class SessionInfo
 public:
     //извежда информация за текущата сесия (имената на изображения са в сесията, индентификационният номер на сесията,
     //трансформациите, които предстоят да се извърщат
+    // @param images масив от картинки
+    // @param transformations масив от трансформации
+    // @param cur_ID индентификационният номер на текущата сесия    
     void execute(Files& images, Transformations& transformations, int cur_ID);
 };
 #endif
