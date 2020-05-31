@@ -12,12 +12,14 @@ private:
 	vector<Transformation> transformations;
 public:
 	//добавя трансформация към масива
+	// @param trans трансформация (обект от тип Transformation) 
 	void addTransformation(Transformation trans);
 	// предифиниран оператор []
 	Transformation& operator[](int index);
-	// връша int текущият брой на трансформациите в масива
+	// @ретурнс int текущият брой на трансформациите в масива
 	int getSize() const;
 	// изтрива трансформация в масива по подаден index
+	// @param index индекс в масива
 	void deleteTransformation(int index);
 };
 #endif
