@@ -8,6 +8,7 @@ class Save : public File
 {
 public:
 	// запазва направените промени върху картинките в масива във файловете
+	// @param images масив от картинки
 	bool execute(Files& images);
 };
 #endif
