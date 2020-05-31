@@ -17,12 +17,14 @@ public:
 	// конструктор по подаден индентификационен номер и име на трансформацията
 	Transformation(int ID, const char* transformation_name);
 	// променя индентификационния номер 
+	// @param ID индентификационен номер
 	void setID(int ID);
 	// порменя името на трансформацията
+	// @param transformation_name име на трансформацията
 	void setTransformationName(const char* transformation_name);
-	// връща int индентификационния номер 
+	// @returns int индентификационния номер 
 	int getID() const;
-	// връща const char* името на трансформацията
+	// @returns const char* името на трансформацията
 	const char* getTransformationName() const;
 };
 #endif
