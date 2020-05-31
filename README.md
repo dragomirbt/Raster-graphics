@@ -8,12 +8,13 @@ github: https://github.com/dragosa4a/Raster-graphics
 Проектът е реализиран чрез съвкупност от класове, които имплементират различните командти. Съществува и клас, който представя самото растерно изображение, както и такъв който представя трансформацията, която ще се извърши.
 
 Класът, който описва едно растерно изображение е File.
-Обектите от тип File съдръжат следните член
+
+Обектите от тип File съдръжат следните член - данни:
   
-  * char file_format[MAX_SIZE_FILE_FORMAT] - формат
-	* unsigned width - ширина
-	* unsigned height - височина
-	* unsigned max_value_for_color - максимална стойност за цвят
-	* int** matrix - матрица
-	* int ID - индетификационен номер
-	* char image_name[MAX_IMAGE_NAME_SIZE] - име    
+ * char file_format[MAX_SIZE_FILE_FORMAT] - формат
+* unsigned width - ширина
+* unsigned height - височина
+* unsigned max_value_for_color - максимална стойност за цвят
+* int** matrix - матрица
+* int ID - индетификационен номер
+* char image_name[MAX_IMAGE_NAME_SIZE] - име    
