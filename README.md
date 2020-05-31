@@ -84,4 +84,5 @@ github: https://github.com/dragosa4a/Raster-graphics
 * .ppm
 * .pgm
 * .pbm
+
 Възможно е и добавянето на нови команди.
