@@ -22,6 +22,7 @@ public:
 	//основни команди
 	
 	//зарежда файл по нужния начин (binary, ascii)
+	//@param image_name Име на картинката
 	bool load(const char* image_name);
 	//принтира командите, с които разполага приложението
 	void help() const;
@@ -30,6 +31,7 @@ public:
 	//други команди
 	
 	// добавя/зарежда файл по нужния начин в текуща сесия
+	//@param image_name Име на картинката
 	void add(const char* image_name);
 };
 #endif
