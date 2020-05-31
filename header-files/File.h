@@ -30,6 +30,7 @@ private:
 	char image_name[MAX_IMAGE_NAME_SIZE];
 protected:
 	// взема разширението на дадена картинка по подадено име
+	// @param  image_name Името на картинката
 	virtual char* getExtention(const char* image_name) const;
 public:
 	// конструктор по подразбиране
@@ -42,35 +43,41 @@ public:
 	File& operator=(const File& other);
 	// деструктор
 	~File();
-	
+
 	// променя формата на картинката
+	// @param  file_format форматът на картинката
 	void setFileFormat(const char* file_format);
 	// променя широчината на картинката
+	// @param  width широчината на картинката
 	void setWidth(unsigned width);
 	// променя височината на картинката
+	// @param  height височината на картинката
 	void setHeight(unsigned height);
 	// променя максималната стойност за цвят на картинката
+	// @param  max_value_for_color максималната стойност за цвят на картинката
 	void setMaxValueForColor(unsigned max_value_for_color);
 	// променя сойностите в матрицата на картинката
+	// @param  matrix матрицата на картинката
 	void setMatrix(int** matrix);
 	// променя индентификационния номер на картинката
+	// @param  ID индентификационният на картинката
 	void setID(int ID);
 	// връша const char* формат на картинката
 	const char* getFileFormat() const;
-	// връща unsigned широчина на картинката
+	// @returns unsigned широчина на картинката
 	unsigned getWidth() const;
-	//връща unsigned височина на картинката
+	//@returns unsigned височина на картинката
 	unsigned getHeight() const;
-	//връща unsigned максимална стойност за цвят на картинката
+	//@returns unsigned максимална стойност за цвят на картинката
 	unsigned getMaxValueForColor() const;
-	// връща int** матрица на картинката
+	// @returns int** матрица на картинката
 	int** getMatrix() const;
-	// връща int индентификационен номер на картинката
+	// @returns int индентификационен номер на картинката
 	int getID() const;
-	// връша const char* име на картинката
+	// @returns const char* име на картинката
 	const char* getImageName() const;
 	// променя името на картинката
-	void setImageName(const char* image_name);	
+	// @param image_name име на картинката
+	void setImageName(const char* image_name);
 };
-
 #endif
