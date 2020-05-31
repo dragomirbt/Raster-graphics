@@ -4,22 +4,23 @@
 #include <vector>
 using namespace std;
 
-// класът описва масив от трансформации
-// член данни: масив от Transformation
+/// класът описва масив от трансформации
+///
+/// член данни: масив от Transformation
 class Transformations
 {
 private:
 	vector<Transformation> transformations;
 public:
-	//добавя трансформация към масива
-	// @param trans трансформация (обект от тип Transformation) 
+	/// добавя трансформация към масива
+	/// @param trans трансформация (обект от тип Transformation) 
 	void addTransformation(Transformation trans);
-	// предифиниран оператор []
+	/// предифиниран оператор []
 	Transformation& operator[](int index);
-	// @ретурнс int текущият брой на трансформациите в масива
+	/// @returns int текущият брой на трансформациите в масива
 	int getSize() const;
-	// изтрива трансформация в масива по подаден index
-	// @param index индекс в масива
+	/// изтрива трансформация в масива по подаден index
+	/// @param index индекс в масива
 	void deleteTransformation(int index);
 };
 #endif
