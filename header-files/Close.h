@@ -8,6 +8,7 @@ class Close
 {
 public:
 	//изтрива последно добавеният файл в масива от файлове
+	//@param images Масив от картинки
 	void execute(Files& images);
 };
 
