@@ -19,7 +19,7 @@ public:
 	BasicCommands();
 	//конструктор с параметър име на команда
 	BasicCommands(const char* name);
-	//basic comamnds
+	//основни команди
 	
 	//зарежда файл по нужния начин (binary, ascii)
 	bool load(const char* image_name);
@@ -27,7 +27,7 @@ public:
 	void help() const;
 	// излиза от програмата
 	void exit() const;
-	//other commands
+	//други команди
 	
 	// добавя/зарежда файл по нужния начин в текуща сесия
 	void add(const char* image_name);
