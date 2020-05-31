@@ -8,6 +8,7 @@ class Monochrome : public File
 {
 public:
     // всички картинки в текущата сесия стават черно-бели
+    // @param images масив от картинки
     void execute(Files& images);
 };
 #endif
